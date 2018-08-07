@@ -1,0 +1,83 @@
+// http://ionicframework.com/docs/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 13px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.center-content {
+  @media only screen and (min-width: 768px) {
+    &.fixed {
+      width: 600px;
+    }
+    &.flexible {
+      width: 70%;
+    }
+    margin: auto;
+    padding: 0px;
+  }
+}
+
+ion-content.center-container .scroll-content {
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.red-toast {
+  .toast-container {
+    background-color: color($colors, danger, base);
+  }
+  .toast-message {
+    color: color($colors, white, base);
+  }
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-clear-button {
+  -webkit-appearance: none;
+}
